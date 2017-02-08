@@ -1,4 +1,5 @@
-# *Invensense MPU-9250 SPI Library adapted for the use with Kalman Filter library: https://github.com/TKJElectronics/KalmanFilter*
+# *Invensense MPU-9250 SPI Library adapted for the use with Kalman Filter* 
+https://github.com/TKJElectronics/KalmanFilter
 
 Tested on Teensy 3.2
 
