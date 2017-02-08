@@ -232,7 +232,7 @@ void MPU9250::read_acc()
     for(i = 0; i < 3; i++) {
         bit_data = ((int16_t)response[i*2]<<8)|response[i*2+1];
         data = (float)bit_data;
-        accel_data[i] = data/acc_divider - a_bias[i];
+        accel_data[i] = data - a_bias[i];
     }
     
 }
@@ -254,7 +254,7 @@ void MPU9250::read_gyro()
     for(i = 0; i < 3; i++) {
         bit_data = ((int16_t)response[i*2]<<8) | response[i*2+1];
         data = (float)bit_data;
-        gyro_data[i] = data/gyro_divider - g_bias[i];
+        gyro_data[i] = data - g_bias[i];
     }
 
 }

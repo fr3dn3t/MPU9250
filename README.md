@@ -1,12 +1,5 @@
-# *Invensense MPU-9250 SPI Library*
+# *Invensense MPU-9250 SPI Library adapted for the use with Kalman Filter library: https://github.com/TKJElectronics/KalmanFilter*
 
-Tested on Arduino 1.0.6 and 1.6.3
+Tested on Teensy 3.2
 
-Does not use the built in DMP of the imu but instead just gives you raw data.
-
-If you have any questions, please do not hesitate to contact me.
-
-The source code in this repository is licensed under The MIT License (MIT).
-See LICENSE.txt for details.
-
-Copyright (c) 2016 Brian Chen
+Does not use the built in DMP of the imu. Use this library only in combination with the Kalman Filter library (see example code), otherwise use the original one: https://github.com/brianc118/MPU9250
